@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-neutral-300 text-sm;
+  }
+  button {
+    @apply text-sm bg-black text-white font-medium px-4 py-2 rounded-full w-fit;
+  }
+
+  h1 {
+    @apply text-xl font-medium tracking-tight;
+  }
+  input {
+    @apply text-sm block w-full border-b pb-3 focus:outline-none;
+  }
+}
+
+@layer components {
+  .card-span {
+    @apply w-full  bg-white hover:shadow-xl hover:shadow-neutral-300/40 rounded-md transition duration-200;
+  }
+  .card {
+    @apply w-full h-72 bg-white  hover:shadow-xl hover:shadow-neutral-300/40  rounded-md transition duration-200 p-8;
+  }
+}

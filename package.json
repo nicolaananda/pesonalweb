@@ -1,0 +1,22 @@
+{
+  "name": "tugas2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack ./src/lib/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.2",
+    "typed.js": "^2.1.0"
+  }
+}
